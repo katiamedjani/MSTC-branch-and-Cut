@@ -1,1 +1,24 @@
+Abstarct
 
+we study approaches for the exact solution of the NP–hard minimum spanning tree problem under conflict constraints.
+G(V,E) a graph.
+C ⊂ E × E of conflicting edge pairs.
+the problem consists of finding a conflict-free minimum spanning tree, i.e. feasible solutions are allowed to include at most one of
+the edges from each pair in C.
+Ĝ(E,C) a conflit graph.
+where stable sets correspond to conflict-free subsets of E.
+
+
+1-introduction:
+2-A preprocessing algorithm 
+3-Branch and cut approach
+    3.1 Integer programming formulation
+    3.2 General algorithm
+    3.3 Separation procedures
+        a-Subtour elimination constraints
+        b-Odd-cycle inequalities
+   Implementation details
+4-Computational results
+5-final remarks
+        
+    
