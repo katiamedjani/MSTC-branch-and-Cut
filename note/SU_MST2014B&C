@@ -11,6 +11,16 @@ where stable sets correspond to conflict-free subsets of E.
 
 1-introduction:
 2-A preprocessing algorithm 
+    se fait en trois étapes: 
+                            étape 01:
+                            -contracter les arêtes(bridges) et mettre a jours le graphe des conflits en supprimanr toute les arêtes
+                             en conflit avec les bridges, 
+                            -si le graphe obtenu n'est pas connécté donc le probléme n'est pas réalisable.
+                            -si le graphe obtenu est un arbre sans conflit donc on conclut que c'est l'unique solution.
+                            
+                            étape 02:- suppression.
+                            3- 
+                                                                
 3-Branch and cut approach
     3.1 Integer programming formulation
     3.2 General algorithm
