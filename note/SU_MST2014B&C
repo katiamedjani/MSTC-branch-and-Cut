@@ -18,14 +18,18 @@ where stable sets correspond to conflict-free subsets of E.
                             -si le graphe obtenu n'est pas connécté donc le probléme n'est pas réalisable.
                             -si le graphe obtenu est un arbre sans conflit donc on conclut que c'est l'unique solution.
                             
-                            étape 02:- suppression.
-                            3- 
+                            étape 02:-pour toute arête e dans E, si la suppression des arêtes en conflits avec e deconnecte les graphe 
+                            alors je supprime e.
+                            
+                            
+                            étape 03:-pour toute paire d'arêtes e1 et e2, si la suppression des arêtes en conflits avec e1 et e2
+                            deconnecte le graphe alors ajouter {e1,e2} dans C. 
                                                                 
 3-Branch and cut approach
     3.1 Integer programming formulation
     3.2 General algorithm
     3.3 Separation procedures
-        a-Subtour elimination constraints
+        a-Subtour elimination constraints: utilisation de la coupe min
         b-Odd-cycle inequalities
    Implementation details
 4-Computational results
