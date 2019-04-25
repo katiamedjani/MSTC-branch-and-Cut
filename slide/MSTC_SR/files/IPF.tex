@@ -1,0 +1,59 @@
+\begin{frame}{Approche Branch and Cut}
+    \begin{block}{Formulation en programmation entiére}
+    {\color{blue}  
+        \begin{equation}
+            \sum_{e \in E(S)} x_{e} \leq |S|-1 \qquad  \forall S \subset V, S \neq \phi 
+        \end{equation}    
+        
+        \begin{equation}
+             \sum_{e \in E} x_{e} = n-1
+        \end{equation}
+        
+        \begin{equation}
+            0\leq x_{e} \leq 1 \qquad  e \in E  
+        \end{equation}
+         
+        \begin{equation}
+            x_{e_{1}} + x_{e_{2}} \leq 1 \qquad  \forall{x_{e_{1}}, x_{e_{2}}} \in C  
+        \end{equation}
+         
+        \begin{equation}
+             \sum_{e \in U} x_{e} \leq \frac{|U|-1}{2}  \quad  \forall U \subset E \; \text{ incluant un odd-cycle dans }   \hat{G} 
+        \end{equation}
+    }
+        \begin{equation}
+             \sum_{e \in Q} x_{e} \leq 1  \quad  \forall Q \subset E \; \text{ une clique dans }   \hat{G} 
+        \end{equation}
+        \end{block}
+\end{frame}
+
+\begin{frame}{Approche Branch and Cut}
+    \begin{block}{Article de F. Carrabs, R.Cerulli, R.Pentangelo, A.Raiconi}
+        \begin{equation}
+             \sum_{e_{i} \in \zeta}x_{e_{i}} \leq \zeta-1  \quad  \forall \zeta \subseteq E : \; \exists\{e_{k},e_{j}\}\subseteq \zeta \cap \chi(e_{c}), \; e_{c} \not\in \zeta
+        \end{equation}
+        
+        \begin{equation}
+             \sum_{e \in \delta(v)} x_{e} \geq 1  \quad  \forall v \subset V \; \text{ Pas de sommet isolé }  
+        \end{equation}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Approche Branch and Cut}
+    \begin{block}{Procédure de séparation}
+        \begin{enumerate}
+            \item Subtour elimination constraints
+                \begin{itemize}
+                    \item on construit un réseau orienté X; tel que la capacité d'un arc (i,j) correspond au poid de l'arête $X_{i,j}$ dans G.
+                    \item on choisit arbitrairement un sommet r comme racine.
+                    \item X satisfait SEC ssi on peut envoyer une unité de flux de r vers tous les sommet.
+                    \item  si la valeur de toute coupe minimale est moins de 1, nous avons trouvé une enégalité violée.
+                \end{itemize}
+                
+            \item Odd-cycle inequalities 
+                \begin{itemize}
+                    \item procédure de séparation exacte.
+                \end{itemize}
+        \end{enumerate}
+    \end{block}
+\end{frame}
