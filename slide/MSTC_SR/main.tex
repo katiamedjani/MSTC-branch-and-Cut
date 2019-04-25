@@ -1,0 +1,47 @@
+\documentclass[11pt]{beamer}
+
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+%\usecolortheme{albatross}
+}
+
+\input{config.tex}
+
+%%%%%%%% titulo e subtitulo %%%%%%%%
+\title[presentation]{A branch and cut algorithm for minimum spanning trees
+under conflict constraints} 
+
+%%%%%%%% nome dos autores %%%%%%%%
+\author[Samer, Urrutia]{
+Phillippe Samer · Sebastián Urrutia} 
+
+\begin{document}
+\input{files/pre-slides.tex}
+
+%%%%%%%% slides %%%%%%%%
+\section{Introduction} 
+\input{files/introduction.tex}
+
+\section{Algorithme de prétraitement}
+\input{files/preprocess.tex}
+
+\section{Approche Branch and Cut}
+
+
+\subsection{Formulation de programmation entière}
+\input{files/IPF.tex}
+
+%\subsection{Algorithme général}
+%\input{files/metodologia.tex}
+
+\subsection{Procédure de séparation}
+%\input{files/metodologia.tex}
+
+
+
+\section{Conclusion}
+\input{files/conclusion.tex}
+
+
+\end{document}
