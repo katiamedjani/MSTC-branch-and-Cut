@@ -1,0 +1,73 @@
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[french]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{tgbonum}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+
+\begin{document}
+{\fontfamily{cmr}\selectfont
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Rapport hebdomadaire}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize \vspace*{5\baselineskip}
+		}
+		}
+
+\date{19 Avril 2019}
+
+\author{
+		MEDJANI Katia \\ 
+		Université Clermont Auvergne \\
+		Dans le cadre de mon stage de master2 SIAD}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+%\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+\section{Résumé de la réunion}
+\input{highlights.tex}
+%\newpage
+%\section{Getting Started}
+%\input{getstart.tex}
+
+
+\section{Les tâches à faire pour la semaine prochaine}
+\input{TacheSuivante.tex}
+
+\section{Conclusion}
+\input{conclusion.tex}
+
+}
+\end{document}
+
+
